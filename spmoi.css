@@ -1,0 +1,81 @@
+﻿.container-ip {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.product-list-ip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: -10px; /* Giảm khoảng cách giữa các sản phẩm */
+}
+
+.h1-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.danhMuc {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục danh mục */
+}
+
+    .danhMuc a {
+        text-decoration: none; /* Loại bỏ gạch chân mặc định cho liên kết */
+        color: white; /* Màu chữ của liên kết */
+        font-weight: bold; /* Độ đậm của chữ */
+    }
+
+        .danhMuc a:hover {
+            color: #007bff; /* Màu chữ khi di chuột qua liên kết */
+        }
+
+.product-ip {
+    width: 250px;
+    padding: 10px;
+    margin-right: 20px; /* Tạo khoảng cách giữa các sản phẩm */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 400px; /* Sản phẩm có chiều cao 400px */
+    flex: 0 0 auto; /* Không thay đổi kích thước của sản phẩm */
+    margin-top: 20px; /* Khoảng cách trên sản phẩm */
+    margin-left: 20px; /* Khoảng cách bên trái sản phẩm */
+    margin-bottom: 20px;
+}
+
+    .product-ip img {
+        width: 100%;
+        border-radius: 5px;
+        height: auto; /* Hình ảnh tự động điều chỉnh chiều cao dựa trên tỷ lệ chiều rộng */
+        max-height: 200px; /* Chiều cao tối đa của hình ảnh */
+    }
+
+    .product-ip h3 {
+        margin-top: 10px;
+    }
+
+    .product-ip p {
+        margin-top: 5px;
+    }
+
+    .product-ip button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+@media (max-width: 500px) {
+    .product-ip {
+        width: 45%; /* Sản phẩm chiếm toàn bộ chiều rộng */
+        margin-right: 0; /* Không có khoảng cách giữa các sản phẩm */
+        margin-bottom: 20px; /* Khoảng cách giữa các dòng sản phẩm */
+    }
+}

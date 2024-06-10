@@ -1,0 +1,55 @@
+﻿
+.separator:last-child {
+    display: none; /* Ẩn đường gạch phân tách của mục cuối cùng */
+}
+
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #000000; /* Thêm đường gạch ở giữa */
+}
+
+.vertical-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .vertical-menu li {
+        margin-bottom: 10px;
+    }
+
+        .vertical-menu li a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+
+            .vertical-menu li a:hover {
+                background-color: #ddd;
+            }
+
+        .vertical-menu li:first-child {
+            border-top: 1px solid #ccc; /* Thêm đường gạch trên mục đầu tiên */
+        }
+
+    .vertical-menu li {
+        border-bottom: 1px solid #ccc; /* Thêm đường gạch dưới mỗi mục danh mục */
+    }
+
+.content {
+    flex-grow: 1;
+}
+
+    .content iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+.container-DM {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: flex
+}

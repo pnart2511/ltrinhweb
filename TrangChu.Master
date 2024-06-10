@@ -1,0 +1,195 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TrangChu.master.cs" Inherits="webSellPhone.TrangChu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="spmoi.css">
+    <link rel="stylesheet" href="SanPham.css">
+    <link rel="stylesheet" href="danhMuc.css">
+     <link rel="stylesheet" href="banner.css">
+     <link rel="stylesheet" href="ListSP.css">
+    <script src="script.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap">
+
+</head>
+  <style>
+    a.chitiet {
+    text-decoration: none;
+    color: inherit;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFD700; /* Yellow background color similar to the image */
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-container {
+    display: flex;
+    margin-left: 20px;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 5px;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right span, .navbar-right a {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right i {
+    margin-right: 5px;
+}
+
+.navbar-right a:hover {
+    color: red;
+}
+
+
+  </style>
+<body>
+      <%--<header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="https://didongviet.vn/svg/Header/logowhite.svg" alt="Di Động Việt"></a>
+            </div>
+            <div class="search-bar">
+                <form action="#" method="GET">
+                    <input type="text" name="search" placeholder="Tìm kiếm...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="user-actions">
+                <a href="#">Đăng nhập</a>
+                <a href="#">Đăng ký</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+            </div>
+        </div>
+    </header>--%>
+     <header>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="/Home.aspx" class="logo"><img src="https://via.placeholder.com/50x50" alt="Logo"></a>
+                <div class="search-container">
+                    <input type="text" placeholder="Từ khóa..." class="search-input">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+          
+            <div class="navbar-right">
+                <span><i class="fas fa-clock"></i> Công nghệ 24h</span>
+                <span><i class="fas fa-tags"></i> Khuyến mãi mới</span>
+                <span><i class="fas fa-phone-alt"></i> Đặt Hàng 070.663.748</span>
+                <a href="/Tracuudonhang.aspx"><i class="fa-solid fa-truck"></i> Tra cứu đơn hàng</a>
+                <a href="#"><i class="fas fa-user"></i> Đăng nhập/Đăng ký</a>
+            </div>
+        </div>
+    </header>
+<%--    <%-- <nav>
+  <%--<div class="container">
+    <ul>
+           <li class ="danhMuc"><a href="/Home.aspx">Trang chủ</li>
+           <li class ="danhMuc"><a href="/gioiThieu.aspx">Giới Thiệu</li>
+        <li class ="danhMuc"><a href="/ChinhSachBaoHanh.aspx">Chính sách bảo hành</li>
+        <li class ="danhMuc"><a href="/">Tư vấn</li>
+        
+    </ul>
+</div>--%>
+    <br />
+    
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+      <footer>
+        <div class="container" style="text-align:center">
+            <p>&copy; 2024 Nhóm 12. Web Sell Phone</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

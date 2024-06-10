@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="webSellPhone" Class="SQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.tb_banner" Member="tb_banners">
+    <Type Name="tb_banner">
+      <Column Name="id_banner" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_banner" Type="System.String" DbType="NChar(60)" CanBeNull="true" />
+      <Column Name="hienthi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_danh_muc_phu_kien" Member="tb_danh_muc_phu_kiens">
+    <Type Name="tb_danh_muc_phu_kien">
+      <Column Name="id_danh_muc_phu_kien" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_danh_muc_phu_kien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hienThi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tb_danh_muc_phu_kien_tbPhuKien" Member="tbPhuKiens" ThisKey="id_danh_muc_phu_kien" OtherKey="id_danh_muc_phu_kien" Type="tbPhuKien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbPhuKien" Member="tbPhuKiens">
+    <Type Name="tbPhuKien">
+      <Column Name="id_phukien" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_phu_kien" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="gia_sp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gia_km" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dung_luong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cong_sac" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="bao_hanh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id_danh_muc_phu_kien" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="anh_pk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hienThi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tb_danh_muc_phu_kien_tbPhuKien" Member="tb_danh_muc_phu_kien" ThisKey="id_danh_muc_phu_kien" OtherKey="id_danh_muc_phu_kien" Type="tb_danh_muc_phu_kien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_danh_muc" Member="tb_danh_mucs">
+    <Type Name="tb_danh_muc">
+      <Column Name="id_danh_muc" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_danh_muc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="hienThi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tb_danh_muc_tb_sp" Member="tb_sps" ThisKey="id_danh_muc" OtherKey="id_danh_muc" Type="tb_sp" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_sp" Member="tb_sps">
+    <Type Name="tb_sp">
+      <Column Name="id_sanpham" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_sanPham" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="giaSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="giaKM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ton_kho" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="man_hinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="kich_thuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="camera" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cong_sac" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="anh_sp" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="sp_hot" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="trong_luong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mau_sac" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="bao_hanh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="mo_ta" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="xuat_xu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id_danh_muc" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="hienThi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="pin" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="tb_danh_muc_tb_sp" Member="tb_danh_muc" ThisKey="id_danh_muc" OtherKey="id_danh_muc" Type="tb_danh_muc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tb_don_dat_hang" Member="tb_don_dat_hangs">
+    <Type Name="tb_don_dat_hang">
+      <Column Name="id_don_dat_hang" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ten_nguoi_mua" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="id_san_pham" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="so_luong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dia_chi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="so_dien_thoai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hienThi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_phu_kien" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

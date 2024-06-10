@@ -1,0 +1,109 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Khi hiển thị trên điện thoại */
+
+
+h1 {
+    text-align: center;
+    color: #c30000;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+    .tab-button:hover {
+        background-color: #f1f1f1;
+    }
+
+.products {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    cursor: grab;
+}
+
+    .products:active {
+        cursor: grabbing;
+    }
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 220px;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product h2 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+.price {
+    color: #c30000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 14px;
+}
+
+.discount {
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.best-seller::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.promo {
+    background-color: #ffe9e9;
+    color: #c30000;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.promo-details {
+    margin-top: 10px;
+    color: #c30000;
+    font-size: 12px;
+}

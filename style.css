@@ -1,0 +1,129 @@
+﻿/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.container-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-image: url('https://cdn-v2.didongviet.vn/files/default/2024/0/22/0/1705921119306_background_tet.jpg');
+    align-items: center;
+    height: 480px;
+    margin-top: 30px;
+}
+
+.container-2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: #be1e2d;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+    .user-actions a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+}
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        nav ul li {
+            padding: 0 10px;
+        }
+
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+danhmuc:hover {
+    color: red;
+}
+
+@media (max-width: 500px) {
+    .danhMuc {
+        font-size: 14px; /* Kích thước chữ giảm xuống */
+    }
+}
+
+
+
+
+
+.prod
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Thanh danh muc  o phhien mobile */
+}
+
+#categoryList {
+    display: none; /* Ẩn danh sách ban đầu */
+}
+
+    #categoryList.hidden {
+        display: none; /* Ẩn danh sách khi có lớp hidden */
+    }

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.375" name="SQL">
+  <DataContextMoniker Name="/SQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="20c28b2f-292f-49a9-99cc-0a9d4c6d086d" absoluteBounds="0.875, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SQLDataContext/tb_banner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abdbf804-4106-452d-8279-9600fb9efc6f" absoluteBounds="0.89, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94138a43-6142-45cf-a972-f5c19bdbff77" absoluteBounds="3.75, 0.625, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SQLDataContext/tb_danh_muc_phu_kien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="727c9d49-2c5a-4792-b862-a9b67a34ba58" absoluteBounds="3.7649999999999997, 1.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3275e40b-8e53-4994-b5a8-b64fa33f5501" absoluteBounds="7.625, 1.375, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SQLDataContext/tbPhuKien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4ff2143-c1ab-4fbb-8e07-55a68e38475c" absoluteBounds="7.64, 1.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 1.69314697265625); (7.625 : 1.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SQLDataContext/tb_danh_muc_phu_kien/tb_danh_muc_phu_kien_tbPhuKien" />
+      <nodes>
+        <classShapeMoniker Id="94138a43-6142-45cf-a972-f5c19bdbff77" />
+        <classShapeMoniker Id="3275e40b-8e53-4994-b5a8-b64fa33f5501" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c13bad10-3d1f-4b46-bd00-ddccbd3a4c46" absoluteBounds="4.875, 2.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SQLDataContext/tb_danh_muc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1383311a-80f8-412f-b83f-9db010e13856" absoluteBounds="4.89, 2.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a0f9879-cddd-4fdb-8217-2cb5a69e16cf" absoluteBounds="1.875, 4.625, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/SQLDataContext/tb_sp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfa1557a-d711-4c44-b6ca-346d91fc6b18" absoluteBounds="1.8900000000000001, 5.085, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.53125 : 3.8862939453125); (5.53125 : 7.999208984375); (3.875 : 7.999208984375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SQLDataContext/tb_danh_muc/tb_danh_muc_tb_sp" />
+      <nodes>
+        <classShapeMoniker Id="c13bad10-3d1f-4b46-bd00-ddccbd3a4c46" />
+        <classShapeMoniker Id="5a0f9879-cddd-4fdb-8217-2cb5a69e16cf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="98aa53a0-9132-4f23-b74f-3a42b48f75ad" absoluteBounds="6.25, 4.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/SQLDataContext/tb_don_dat_hang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4acac61-94dc-4a32-a842-7bc703d8024f" absoluteBounds="6.265, 4.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

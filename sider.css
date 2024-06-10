@@ -1,0 +1,38 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.img-comp-container {
+    position: relative;
+    height: 500px;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+    .img-comp-img img {
+        padding: 20px;
+        display: table-row;
+    }
+
+.container {
+    display: table;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background: url(slider_icon.jpg);
+    background-color: #ffffff70;
+    background-repeat: round;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+}
